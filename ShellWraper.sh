@@ -1,4 +1,9 @@
 #!/bin/sh
+
+if [ ! -f /tmp/datalog.txt ]; then
+        echo "..." > /tmp/datalog.txt
+fi
+
 reset-mcu
 STR=$(cat /tmp/datalog.txt)
 STD=$(cat /tmp/datalog.txt)
